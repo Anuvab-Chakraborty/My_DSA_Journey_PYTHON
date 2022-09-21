@@ -8,7 +8,7 @@ def team(z):
 n=int(input())
 l=[]
 for i in range(n):
-    z=list(map(int,input().split()))
-    l+=[z]
+    m=list(map(int,input().split()))
+    l+=[m]
+#print(l)
 print(team(l))
-#needed help revisit soon
