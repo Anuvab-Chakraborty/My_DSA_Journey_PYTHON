@@ -1,0 +1,1 @@
+#This is the majority votibg algorithm
