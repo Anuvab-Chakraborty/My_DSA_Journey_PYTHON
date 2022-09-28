@@ -46,6 +46,48 @@ def star_patterns_reverse(n):
             print("*",end=" ")
         print("")
 
+
+def square_patterns_reverse(n):
+    for i in range(n):
+        for j in range(n,0,-1):
+            print(j,end=" ")
+        print("")
+
+def triangular_patterns(n):
+    for i in range(n):
+        for j in range(i+1):
+            print(j+1,end=" ")
+        print("")
+
+def triangular_pattern_variation(n):
+    for i in range(1,n+1):
+        for j in range(i):
+            z=j+i
+            print(z,end=" ")
+        print("")
+
+def triangular_pattern_hard_version(n):
+    count=0
+    for i in range(1,n+1):
+        for j in range(i):
+            count+=1
+            print(count,end=" ")
+        print("")
+
+def triangle_normal(n):
+    for i in range(1,n+1):
+        for j in range(i):
+            print(i,end=" ")
+        print("")
+
+def rev_triangle_hard(n):
+    for i in range(1,n+1):
+        for j in range(i):
+            z=i-j
+            print(z,end=" ")
+        print("")
+
+
 n=4
 #normal_tri(n)
 """OUTPUT:
@@ -122,6 +164,78 @@ OUTPUT:
 * * * 
 * * 
 *
+
+"""
+
+#square_patterns_reverse(n)
+
+"""
+OUTPUT:
+
+4 3 2 1 
+4 3 2 1 
+4 3 2 1 
+4 3 2 1 
+
+"""
+
+#triangular_patterns(n)
+
+"""
+OUTPUT:
+
+1 
+1 2 
+1 2 3 
+1 2 3 4
+
+"""
+
+#triangular_pattern_variation(n)
+
+"""
+OUTPUT:
+
+1 
+2 3 
+3 4 5 
+4 5 6 7
+
+"""
+
+#triangular_pattern_hard_version(n)
+
+"""
+OUTPUT:
+
+1 
+2 3 
+4 5 6 
+7 8 9 10
+
+"""
+
+#triangle_normal(n)
+
+"""
+OUTPUT:
+
+1 
+2 2 
+3 3 3 
+4 4 4 4
+
+"""
+
+#rev_triangle_hard(n)
+
+"""
+OUTPUT:
+
+1 
+2 1 
+3 2 1 
+4 3 2 1
 
 """
 
