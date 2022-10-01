@@ -119,6 +119,18 @@ def isoceles_triangle(n):
             z-=1
         print("")
 
+def diamond_pattern(n):
+    for i in range(n):
+        print(" " * (n-i-1) + "* " * (i+1))
+    for i in range(n-1):
+        print(" " * (i+1) + "* " * (n-i-1))
+
+def diamond_inverted(n):
+    for i in range(n):
+        print(" " * (n-i-1) + "*" * (i+1))
+    for i in range(n-1):
+        print(" "* (i+1) + "*"*(n-i-1))
+
 
 n=4
 #normal_tri(n)
@@ -306,3 +318,35 @@ OUTPUT:
 1 2 3 4 3 2 1
 
 """
+#diamond_pattern(n)
+
+"""
+
+OUTPUT:
+
+   * 
+  * * 
+ * * * 
+* * * * 
+ * * * 
+  * * 
+   *
+
+"""
+
+#diamond_inverted(n)
+
+"""
+
+OUTPUT:
+
+   *
+  **
+ ***
+****
+ ***
+  **
+   *
+
+"""
+
