@@ -87,6 +87,38 @@ def rev_triangle_hard(n):
             print(z,end=" ")
         print("")
 
+def character_patterns(n):
+    for i in range(1,n+1):
+        for j in range(n):
+            z=ord('A')+j
+            z=chr(z)
+            print(z,end=" ")
+        print("")
+
+
+def reversed_triangle_patterns(n):
+    for i in range(1,n+1):
+        for j in range(n-i):
+            print(" ",end=" ")
+        for j in range(n-i,n):
+            print("*",end=" ")
+        print("")
+
+
+def isoceles_triangle(n):
+    for i in range(1,n+1):
+        z=1
+        for j in range(n-i):
+            print(" ",end=" ")
+        for j in range(n-i,n):
+            print(z,end=" ")
+            z+=1
+        z=i-1
+        for j in range(n+1,n+i):
+            print(z,end=" ")
+            z-=1
+        print("")
+
 
 n=4
 #normal_tri(n)
@@ -239,3 +271,38 @@ OUTPUT:
 
 """
 
+#character_patterns(n)
+
+"""
+OUTPUT:
+
+A B C D 
+A B C D 
+A B C D 
+A B C D
+
+"""
+
+#reversed_triangle_patterns(n)
+
+"""
+OUTPUT:
+
+      * 
+    * * 
+  * * * 
+* * * *
+
+"""
+
+#isoceles_triangle(n)
+
+"""
+OUTPUT:
+
+      1 
+    1 2 1 
+  1 2 3 2 1 
+1 2 3 4 3 2 1
+
+"""
