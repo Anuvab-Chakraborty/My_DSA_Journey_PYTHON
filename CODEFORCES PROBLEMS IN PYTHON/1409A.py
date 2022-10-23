@@ -1,13 +1,13 @@
 #1409A
 def solve(p,q):
-    z=abs(p-q)
+    diff=abs(p-q)
     ans=0   
-    if z==0:
+    if diff==0:
         return ans
         #break
-    if z%10!=0:
+    if diff%10!=0:
         ans+=1
-    ans+=z/10
+    ans+=diff/10
     return int(ans)
         
         
