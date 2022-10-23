@@ -1,7 +1,7 @@
 n=int(input())
-l=list(map(int,input().split()))
-mini=l[::-1].index(min(l))
-maxi=l.index(max(l))
+Li=list(map(int, input().split()))
+mini= Li[::-1].index(min(Li))
+maxi=Li.index(max(Li))
 #"""
 if maxi+mini>=n:
     print(mini+maxi-1)
