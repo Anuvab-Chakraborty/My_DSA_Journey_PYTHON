@@ -1,0 +1,12 @@
+#151A
+n,k,l,c,d,p,nl,np=map(int,input().split())
+total_drink=(k*l)//nl
+total_lime=c*d
+#lime_req=(total_lime)//nl
+salt_req=p//np
+l=[]
+l.append(total_drink)
+l.append(total_lime)
+l.append(salt_req)
+z=min(l)//n
+print(z)

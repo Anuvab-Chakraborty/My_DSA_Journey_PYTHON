@@ -148,6 +148,29 @@ def pattern_practice(n):
                 print(c,end=" ")
         print("")
 
+def pattern_2(n):
+    for i in range(n+1):
+        for j in range(1,i+1):
+            if j%2==0:
+                print("2",end=" ")
+            else:print("1",end=" ")
+        print("")
+
+def pattern_3():
+    n=5
+    for i in range(n,-n,-1):
+        for j in range(i):
+            if j<n:
+                print("* * "*i,end=" ")
+            elif j==n:
+                print("* "*(i*2),end=" ")
+            else:
+                print("* "*i,end=" ")
+        print("")
+
+
+
+
 
 
 n=4
@@ -379,3 +402,16 @@ OUTPUT:
 *10*11*12
 
 """
+#pattern_2(n)
+
+"""
+OUTPUT:
+
+1 
+1 2 
+1 2 1 
+1 2 1 2 
+
+"""
+
+pattern_3()
