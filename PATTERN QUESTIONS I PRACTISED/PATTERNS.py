@@ -131,6 +131,24 @@ def diamond_inverted(n):
     for i in range(n-1):
         print(" "* (i+1) + "*"*(n-i-1))
 
+def pattern_practice(n):
+    c=0
+    """
+    *1*2*3
+    *4*5*6
+    *7*8*9
+    *10*11*12
+    """
+    for i in range(1,n+1):
+        for j in range(((n*(n-1))//2)):
+            if j%2==0:
+                print("*",end=" ")
+            else:
+                c+=1
+                print(c,end=" ")
+        print("")
+
+
 
 n=4
 #normal_tri(n)
@@ -350,3 +368,14 @@ OUTPUT:
 
 """
 
+#pattern_practice(n)
+
+"""
+OUTPUT:
+
+*1*2*3
+*4*5*6
+*7*8*9
+*10*11*12
+
+"""
