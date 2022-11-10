@@ -1,4 +1,5 @@
 #TDK
+"""
 from collections import Counter
 s="abfcwbfbgbbwjhvvsudwiuhdfoihwfibiwsbs"
 c=Counter(s)
@@ -6,11 +7,12 @@ print(c)
 for key,value in c.items():
     if c[key]==1:
         print(key)
-
+"""
 
 """
 from datetime import datetime
 start = datetime.now()
+"""
 from math import *
 def sieve_original(n):
     
@@ -34,6 +36,7 @@ z=sieve_original(n)
 for _ in range(int(input())):
     p=int(input())
     print(z[p-1])
+"""
 end=datetime.now()
 td = (end - start).total_seconds()
 print(f"The time of execution of above program is : {td}ms")
