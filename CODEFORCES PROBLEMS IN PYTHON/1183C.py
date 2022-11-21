@@ -69,10 +69,7 @@ def binary(k, n, a, b, mid):
 
 for _ in range(int(input())):
     k, n, a, b = map(int, input().split())
-    left = 0;
-    right = 1000000000;
-    mid = 0;
-    ans = -1
+    left = 0;right = 1000000000;mid = 0;ans = -1
     while (right - left >= 0):
         mid = left + (right - left) // 2
         if binary(k, n, a, b, mid):
