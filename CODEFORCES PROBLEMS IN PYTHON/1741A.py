@@ -1,3 +1,4 @@
+#1741A
 for _ in range(int(input())):
     a, b = map(str, input().split())
     if "S" in a and "S" in b:
