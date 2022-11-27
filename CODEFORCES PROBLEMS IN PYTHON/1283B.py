@@ -77,4 +77,7 @@ def is_prime(n):
 # ------------------- write code from here --------------------
 for _ in range(int(input())):
     n,k=map(int,input().split())
-    print(int((n-(n%k)) + min(n%k,k/2)))
+    """print(int((n-(n%k)) + min(n%k,k/2)))"""
+    z=n//k;p=k//2;rem=n-z*k
+    f=z*k+min(p,rem)
+    print(f)
